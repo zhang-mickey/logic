@@ -6,14 +6,32 @@ a state <img width="9" alt="image" src="https://github.com/zhang-mickey/logic/as
 ## Hoare logic
 </br>
 <img width="634" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2cc638f2-7b2e-46bc-9c86-f15c95f2e831">
+</br>
+
+### Invariants
+Loop invariants:
+holds before the loop
+holds after each loop iteration
+</br>
+<img width="511" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/4cb65e90-573e-403c-b3bd-91d6b8f9a966">
+
+</br>
+<img width="350" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/c2542659-dc71-4d52-b366-a59d01bb7159">
+</br>
+
+
 
 ### pointer
 
 </br>
 <img width="398" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/eda598f6-0451-4471-bbc3-1470480e5f67">
+</br>
+
 ### Vcgen
 </br>
 <img width="405" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/19c79538-fb45-474f-b39e-d5f091ca85af">
+</br>
+
 ### Horn clause
 
 </br>
