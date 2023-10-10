@@ -8,10 +8,17 @@ a state <img width="9" alt="image" src="https://github.com/zhang-mickey/logic/as
 <img width="634" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2cc638f2-7b2e-46bc-9c86-f15c95f2e831">
 </br>
 
+### 
+<img width="433" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2f7c6388-8271-4d22-8d7b-c64c6dad4f09">
+</br>
+
 ### Invariants
 Loop invariants:
 holds before the loop
 holds after each loop iteration
+</br>
+<img width="473" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/5663acd1-028f-4b43-b529-6c81909c40fd">
+
 </br>
 <img width="511" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/4cb65e90-573e-403c-b3bd-91d6b8f9a966">
 
