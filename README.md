@@ -1,4 +1,21 @@
 # logic
+## propositional logic 
+
+## First order logic
+Propositional logic has very limited expressive power
+</br>
+<img width="753" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/62e841ea-3d23-49db-8a85-08df9c3d332b">
+</br>
+### syntax
+<img width="644" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/4d87b563-fe5b-47c0-823f-aeeb4b56dc84">
+
+</br>
+
+#### atomic sentence
+<img width="723" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/67baa660-f665-4a92-8eba-54d4bc2eb388">
+</br>
+
+<img width="629" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/4d40b6e7-7f83-4d94-9959-722f365f9a4f">
 
 ## Tseitin's transformation)
 
