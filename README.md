@@ -52,6 +52,8 @@ examples
 
 #### how to evaluate a term t under interpretation I and assignment */sigma*
 
+#### semantic arguments
+<img width="894" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/f4367fb0-961c-455e-81ab-58c0741b6fd0">
 
 ## Tseitin's transformation)
 
