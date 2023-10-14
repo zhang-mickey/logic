@@ -22,7 +22,35 @@ Propositional logic has very limited expressive power
 #### first order formula
 <img width="306" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/b12c9c53-1280-4816-9070-3be9d1ddf9b7">
 </br>
+
 a formula with no free variables is called a *closed* formula,or *sentence*.
+</br>
+
+a formula is called *ground* if it does not contain any variables.
+</br>
+examples
+<img width="400" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/6ad7e634-da86-489f-a86c-d97f0a5592e8">
+</br>
+
+### semantics
+To give a semantics to FOL, we need to first fix a universe of discourse(Domain).
+</br>
+The universe of discourse is a non-empty set of objetcs we want to say something about.
+</br>
+can be finite,countably infinite, uncountably infinite, but can not be empty.
+</br>
+<img width="429" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/63dda6f6-086e-48e2-925a-e30e86059a39">
+</br>
+
+
+*A first order interpretation does not talk about variables, only constants.*
+</br>
+examples
+<img width="373" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/e2b88bbc-739a-42c0-99cd-448e427e08a4">
+
+</br>
+
+#### how to evaluate a term t under interpretation I and assignment */sigma*
 
 
 ## Tseitin's transformation)
