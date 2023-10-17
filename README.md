@@ -1,8 +1,7 @@
 # logic
-- [propositional logic](# propositional logic)
-- [First order logic](# First order logic(predicate logic))
-	- [AAA](#aaa)
-	- [bbb](#bbb)
+- [propositional logic]
+- [First order logic]
+
 ## propositional logic 
 
 ## First order logic(predicate logic)
@@ -30,7 +29,7 @@ Propositional logic has very limited expressive power
 a formula with no free variables is called a *closed* formula,or *sentence*.
 </br>
 
-a formula is called *ground* if it does not contain any variables.
+a formula is called `ground` if it does not contain any variables.
 </br>
 examples
 <img width="400" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/6ad7e634-da86-489f-a86c-d97f0a5592e8">
