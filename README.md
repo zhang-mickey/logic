@@ -1,6 +1,6 @@
 # logic
-- [propositional logic](#propositional logic)
-- [First order logic](#First order logic(predicate logic))
+- [propositional logic](# propositional logic)
+- [First order logic](# First order logic(predicate logic))
 	- [AAA](#aaa)
 	- [bbb](#bbb)
 ## propositional logic 
