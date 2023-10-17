@@ -1,4 +1,5 @@
 # logic
+[toc]
 ## propositional logic 
 
 ## First order logic(predicate logic)
@@ -100,10 +101,21 @@ holds after each loop iteration
 ### Horn clause
 #### why horn clause
 motivation:
+<img width="195" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/35b8018b-3bdb-4036-bc8a-3cffd0a421f6">
 
+</br>
+<img width="208" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/1db98387-2a0f-436d-8a6c-fe99c7d73232">
 
 </br>
 <img width="358" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/32a3cf90-1a7a-4816-abbb-e09a46649b41">
+</br>
+
+#### Non-recursive clause are easy to solve
+#### Solving recursive clauses is undecidable& amounts to finding loop invariants.
+
+#### Normalizeing Horn Clauses
+#### solving Horn clauses
+we can use *post* to compute a solution for a set of Horn clauses
 
 
 ## non-Interference
