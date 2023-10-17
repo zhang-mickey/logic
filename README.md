@@ -98,6 +98,9 @@ holds after each loop iteration
 </br>
 
 ### Horn clause
+#### why horn clause
+motivation:
+
 
 </br>
 <img width="358" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/32a3cf90-1a7a-4816-abbb-e09a46649b41">
