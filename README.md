@@ -5,7 +5,8 @@
 ## propositional logic 
 
 ## First order logic(predicate logic)
-Propositional logic has very limited expressive power
+Propositional logic has very limited expressive power  
+It is `undecidable` whether a first-order formula is valid
 </br>
 <img width="753" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/62e841ea-3d23-49db-8a85-08df9c3d332b">
 </br>
@@ -62,11 +63,17 @@ examples
 
 </br>
 
-#### how to evaluate a term t under interpretation I and assignment */sigma*
+#### how to evaluate a term t under interpretation I and assignment
 
 #### semantic arguments
 <img width="894" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/f4367fb0-961c-455e-81ab-58c0741b6fd0">
+is the formula（∃x.p(x)）→p(x) sat,unsat or valid? {SAt}  
+(∀x.p(x))→p(x) sat,unsat or valid? {Valid}  
+(∀x.(p(x)→q(x))→(∃x.(p(x) and q(x))) {SAT}  
 
+consider a formula F such that S,σ |= F, is S a model of F? {NO}  
+consider a sentence F such that S,σ|=F, is S a model of F?{YES}  
+consider a ground formula F such that S,σ|=F, is S a model of F?{YES}  
 ## Tseitin's transformation)
 
 ## Semantics
