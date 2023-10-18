@@ -79,8 +79,46 @@ consider a ground formula F such that S,σ|=F, is S a model of F?{YES}
 But undecidable makes decision procedures unpredictable  
 we donot know if they will terminate  
 Foucu on decidable fragments of FOL
+That means, for some first order theory T:if a formula is valid in FOL, it is also valid modulo T  
+but if a formula is valid modulo T,is it also valid in FOL {No}
+#### T =
+<img width="452" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/1e4c0455-fc47-4d5e-8699-b8be8cb52d88">
+</br>
+The quantifier-free fragment of T= is decidable but NP-complete
+</br>
+<img width="446" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/51bb8d40-b635-4a15-ac6c-e965ab73d139">
+</br>
 
-## Tseitin's transformation)
+#### Peano Arithmetic
+<img width="480" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/9afcc271-c825-42f0-b034-002d775f5b0b">
+</br>
+Validity in full Peano and even the quantifier0free fragment of Peano Arithmetic is undecidable
+</br>
+<img width="477" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/e5231f83-0a51-4489-b08d-6b372cd5790d">
+
+#### Presburger arithmetic
+drop multiplication  
+Balidity in quantifier-free and full Presburger arithmetic is decidable, but super exponential complexity.
+</br>
+<img width="470" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/3b05b898-31d7-493f-9197-fefbd22b97ad">
+#### Integer Arithmetic (linear arithmetic over integers)
+equivalent in expressiveness to Presburger arithmetic
+
+#### Theory of Rationals
+Full theory of rationals is decidable, but doubly exponential  
+Conjunctive quantifier-free fragment efficiently decidable (polynomial time)  
+
+</br>
+<img width="508" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/64adbb67-a9ef-4475-a48e-dded56f8cc9c">
+
+</br>
+<img width="471" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d622fb99-ae71-4acd-acb6-ed2466b5fad2">
+
+#### Theory of arrays
+<img width="501" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d5f43a6f-bbe5-4755-a04a-2c84eaba9885">
+
+
+## Tseitin's transformation
 
 ## Semantics
 a state <img width="9" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/10d5e8e0-b9f0-4c55-a3b6-38522360068b"> is a function from vars to Z；
