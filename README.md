@@ -40,13 +40,14 @@ a formula is called `ground` if it does not contain any variables.
 p(a,f(b))→q(c)
 </br>
 examples
+</br>
 <img width="400" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/6ad7e634-da86-489f-a86c-d97f0a5592e8">
 </br>
 
 ### semantics
-To give a semantics to FOL, we need to first fix a universe of discourse(Domain).
+To give a semantics to FOL, we need to first fix a `universe of discourse`(Domain).
 </br>
-The universe of discourse is a non-empty set of objetcs we want to say something about.
+The universe of discourse is a `non-empty` set of objetcs we want to say something about.
 </br>
 can be finite,countably infinite, uncountably infinite, but can not be empty.
 </br>
