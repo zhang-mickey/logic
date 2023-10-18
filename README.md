@@ -74,6 +74,12 @@ is the formula（∃x.p(x)）→p(x) sat,unsat or valid? {SAt}
 consider a formula F such that S,σ |= F, is S a model of F? {NO}  
 consider a sentence F such that S,σ|=F, is S a model of F?{YES}  
 consider a ground formula F such that S,σ|=F, is S a model of F?{YES}  
+
+### first-order theories
+But undecidable makes decision procedures unpredictable  
+we donot know if they will terminate  
+Foucu on decidable fragments of FOL
+
 ## Tseitin's transformation)
 
 ## Semantics
