@@ -16,11 +16,11 @@ Propositional logic has very limited expressive power
 
 </br>
 which of the following are syntactically correct first order formulas?
--[]f(x)
--[x]g(x)
--[x]p(f(x))
--[]p(p(x))
--[]p(f(g(x)))
+- [ ] f(x)
+- [x] g(x)
+- [x] p(f(x))
+- [ ] p(p(x))
+- [ ] p(f(g(x)))
 
 #### atomic predicate
 <img width="723" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/67baa660-f665-4a92-8eba-54d4bc2eb388">
