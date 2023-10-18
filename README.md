@@ -34,10 +34,10 @@ which of the following are syntactically correct first order formulas?
 <img width="306" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/b12c9c53-1280-4816-9070-3be9d1ddf9b7">
 </br>
 
-a formula with no free variables is called a *closed* formula,or *sentence*.
-</br>
-
-a formula is called `ground` if it does not contain any variables.
+a formula with no free variables is called a `closed` formula,or `sentence`.  
+a formula with free variables is called `open`.  
+a formula is called `ground` if it does not contain any variables.  
+p(a,f(b))→q(c)
 </br>
 examples
 <img width="400" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/6ad7e634-da86-489f-a86c-d97f0a5592e8">
