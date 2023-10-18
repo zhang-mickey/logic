@@ -3,6 +3,27 @@
 - [First order logic]
 
 ## propositional logic 
+formula = conjunction ∧ of clauses
+clause = disjunction ∨ of literals
+literal = proposition or its negation
+
+### NNF
+Negation only appears in literals
+### DNF
+is a formula that is in DNF also in NNF?{YES}  
+DNF conversion causes exponential blow-up in size.
+### CNF
+### Tseitin's transformation
+converts formula F to an equisatisfiable formula F' in CNF with only a linear increase in size.
+</br>
+<img width="524" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/66b53ff4-5081-432b-a6ec-db5b519d47f9">
+</br>
+<img width="410" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2f69d804-ede7-4daf-9b1f-fcd5ecb916fa">
+
+</br>
+<img width="639" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/6af88fc7-179b-4acf-ab7f-1382b639cd2e">
+
+
 
 ## First order logic(predicate logic)
 Propositional logic has very limited expressive power  
@@ -118,7 +139,7 @@ Conjunctive quantifier-free fragment efficiently decidable (polynomial time)
 <img width="501" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d5f43a6f-bbe5-4755-a04a-2c84eaba9885">
 
 
-## Tseitin's transformation
+
 
 ## Semantics
 a state <img width="9" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/10d5e8e0-b9f0-4c55-a3b6-38522360068b"> is a function from vars to Z；
