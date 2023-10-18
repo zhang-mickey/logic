@@ -137,6 +137,10 @@ Conjunctive quantifier-free fragment efficiently decidable (polynomial time)
 
 #### Theory of arrays
 <img width="501" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d5f43a6f-bbe5-4755-a04a-2c84eaba9885">
+</br>
+= is only defined for array elements  
+<img width="460" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/915e9607-ad23-47cf-bac3-81d5665b8f84">
+
 
 
 
