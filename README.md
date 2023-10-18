@@ -18,11 +18,11 @@ Propositional logic has very limited expressive power
 which of the following are syntactically correct first order formulas?
 
 
-:heavy_check_mark: f(x)
-:white_check_mark: g(x)
-:white_check_mark:p(f(x))
-:heavy_check_mark:p(p(x))
-:white_check_mark: p(f(g(x)))
+:heavy_check_mark: f(x)  
+:white_check_mark: g(x)  
+:white_check_mark:p(f(x))  
+:heavy_check_mark:p(p(x))  
+:white_check_mark: p(f(g(x)))  
 
 #### atomic predicate
 <img width="723" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/67baa660-f665-4a92-8eba-54d4bc2eb388">
