@@ -1,4 +1,10 @@
 # logic
+</br>
+<img width="749" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d22e216c-670d-4301-bef2-31e390ad79a1">
+</br>
+Sound：程序分析覆盖了所有的内容
+complete: 不会误报，但可能漏报
+
 - [propositional logic]
 - [First order logic]
 
@@ -224,6 +230,9 @@ instead of the concrete post, we compute an abstract post post#
 <img width="349" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/e8e400be-736b-41a4-916e-8fa097a50a49">
 
 </br>
+
+##### fixedpoint theorem Kleene
+##### abstract interpretation
 
 # Security
 side-channels& speculation
