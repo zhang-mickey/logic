@@ -115,6 +115,25 @@ The quantifier-free fragment of T= is decidable but NP-complete
 </br>
 <img width="446" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/51bb8d40-b635-4a15-ac6c-e965ab73d139">
 </br>
+```
+Consider universe U ≙ {▢,◍,★}, where we have a single unary function f, a unary predicate p, and a single constant a.
+Assume, we have variable assignment σ(x) = ★ and the following interpretation:
+
+I(a) = ▢
+
+I(f) = {★→◍, ◍→▢, ▢→★}
+
+I(p) = {⟨★, ▢⟩, ⟨◍, ▢⟩, ⟨★, ★⟩, ⟨◍, ◍⟩, ⟨▢, ▢⟩} 
+
+Now consider formulas 
+
+F ≙ p(x, a) → p(f(x), a)
+
+G ≙ ∃x.( p(x, x) → p(x, f(x)) )
+
+Let S = ⟨U, I⟩. Which of the following statements is true
+S, σ ⊨ F and S, σ ⊨ G, that is, both F and G are true. 
+```
 
 #### Peano Arithmetic
 <img width="480" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/9afcc271-c825-42f0-b034-002d775f5b0b">
@@ -145,8 +164,12 @@ Conjunctive quantifier-free fragment efficiently decidable (polynomial time)
 <img width="501" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d5f43a6f-bbe5-4755-a04a-2c84eaba9885">
 </br>
 = is only defined for array elements  
+</br>
 <img width="460" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/915e9607-ad23-47cf-bac3-81d5665b8f84">
+</br>
+<img width="350" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/0365da6b-692d-46e5-a274-1ad7a9f27e5c">
 
+</br>
 
 
 
