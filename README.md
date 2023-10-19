@@ -93,7 +93,7 @@ examples
 #### how to evaluate a term t under interpretation I and assignment
 
 #### semantic arguments
-<img width="894" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/f4367fb0-961c-455e-81ab-58c0741b6fd0">
+<img width="894" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/f4367fb0-961c-455e-81ab-58c0741b6fd0">  
 is the formula（∃x.p(x)）→p(x) sat,unsat or valid? {SAt}  
 (∀x.p(x))→p(x) sat,unsat or valid? {Valid}  
 (∀x.(p(x)→q(x))→(∃x.(p(x) and q(x))) {SAT}  
@@ -107,7 +107,7 @@ But undecidable makes decision procedures unpredictable
 we donot know if they will terminate  
 Foucu on decidable fragments of FOL
 That means, for some first order theory T:if a formula is valid in FOL, it is also valid modulo T  
-but if a formula is valid modulo T,is it also valid in FOL {No}
+but if a formula is valid modulo T,is it also valid in FOL {No}  
 #### T =
 <img width="452" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/1e4c0455-fc47-4d5e-8699-b8be8cb52d88">
 </br>
