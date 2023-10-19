@@ -279,4 +279,5 @@ In a programming language augmented with a security type system every expression
 ## Speculative Execution
 
 # literature
-程序分析与验证中的近似思想
+程序分析与验证中的近似思想  
+https://github.com/barghouthi/cs704
