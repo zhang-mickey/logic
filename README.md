@@ -2,7 +2,7 @@
 </br>
 <img width="749" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d22e216c-670d-4301-bef2-31e390ad79a1">
 </br>
-Sound：程序分析覆盖了所有的内容
+Sound：程序分析覆盖了所有的内容  
 complete: 不会误报，但可能漏报
 
 - [propositional logic]
@@ -223,6 +223,9 @@ the solutions to the queries give us the missing loop invariants
 (2)Pick any clause whose head is q query  
 (3)then use the post operator to compute strongest postconditions  
 (4)
+##### subsumption check
+<img width="355" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/0d71c027-adf9-420f-8f2b-3bb3f182227d">
+</br>
 ##### use abstraction to solve terminates
 我们将程序在执行过程中，所有可能出现的状态视为一个集合，称为程序的实际状态集合，记为C。一般而言，集合C是难以获得和准确描述的，而直接在C上进行分析是困难的，其代价也非常高。因此，我们需要使用近似思想，在一个更加“简洁”的集合上进行分析，从而提高效率。在下近似分析中，会在一个C的子集U中进行分析；而在上近似分析中，则会在一个C的超集O中进行分析。  
 为了保证分析的正确性（Soundness），下近似分析一般只用于找错（证伪，Falsification），但无法用于证明（Verification）。这是因为，在实际状态集C的子集U中寻找到的可达错误状态，一定也是C中的可达错误状态。反之，U中不存在可达错误状态却不能说明C中亦不存在可达错误状态。软件测试可以视为一种下近似分析；
@@ -237,6 +240,8 @@ instead of the concrete post, we compute an abstract post post#
 <img width="349" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/e8e400be-736b-41a4-916e-8fa097a50a49">
 
 </br>
+
+
 
 ##### fixedpoint theorem Kleene
 ##### abstract interpretation
