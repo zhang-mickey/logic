@@ -190,6 +190,13 @@ holds after each loop iteration
 </br>
 <img width="405" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/19c79538-fb45-474f-b39e-d5f091ca85af">
 </br>
+<img width="526" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/6d578847-2ff4-4e05-99ca-2404c9542792">
+</br>
+<img width="546" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/ec076f98-3336-4e85-9b36-9e9733216cde">
+
+#### Hoare logic exercises
+<img width="557" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/56e907dd-a43f-431d-b48e-c4e081149755">
+</br>
 
 ### Horn clause
 Horn clauses represent constraints on unknown relations called queries.  
