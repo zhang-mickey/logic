@@ -186,6 +186,8 @@ holds after each loop iteration
 </br>
 
 ### Horn clause
+Horn clauses represent constraints on unknown relations called queries.  
+use weakest preconditions to translate programs into Horn clauses, this translation uses queries to represnet loop invariants.
 #### why horn clause
 motivation:
 <img width="195" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/35b8018b-3bdb-4036-bc8a-3cffd0a421f6">
@@ -202,8 +204,19 @@ motivation:
 
 #### Normalizeing Horn Clauses
 #### solving Horn clauses
-we can use *post* to compute a solution for a set of Horn clauses
-
+we can use *post* to compute a solution for a set of Horn clauses  
+the solutions to the queries give us the missing loop invariants  
+(1)start with a solution that maps all queries to false  
+(2)Pick any clause whose head is q query  
+(3)then use the post operator to compute strongest postconditions  
+(4)
+##### use abstraction to solve terminates
+instead of the concrete post, we compute an abstract post post#  
 
 ## non-Interference
 A process A is said to be noninterfering with another process B across a system M if A’s input to M has no effect on M’s output to B. This property implies that no information flows from A to B through M. Noninterference expresses a confidentiality guarantee because if the observations of B are completely independent of the actions of A, then M does not leak anything to B about A’s input and A cannot reveal any secrets to B via M. Noninterference also expresses an integrity guarantee because if no information flows from A to B through M, then B cannot be corrupted by A via M.
+
+
+## Information flow
+
+##
