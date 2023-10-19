@@ -354,4 +354,5 @@ In a programming language augmented with a security type system every expression
 
 # literature
 程序分析与验证中的近似思想  
-https://github.com/barghouthi/cs704
+https://github.com/barghouthi/cs704  
+https://theory.stanford.edu/~arbrad/slides/
