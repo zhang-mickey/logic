@@ -19,6 +19,15 @@ Negation only appears in literals
 is a formula that is in DNF also in NNF?{YES}  
 DNF conversion causes exponential blow-up in size.
 ### CNF
+
+```
+Consider the following formula (p→q) → (r∧¬p).  
+
+Transform the formula into CNF form using the naive transformation (that is, not using Tseitin's transformation).   
+A clause that only consists of a single propositional variable and its negation (e.g., the clause (p ∨ ¬p)) is trivially true.  
+Remove such clauses from your solution. How many clauses does the translation have?
+3 
+```
 ### Tseitin's transformation
 converts formula F to an equisatisfiable formula F' in CNF with only a linear increase in size.
 </br>
@@ -28,9 +37,35 @@ converts formula F to an equisatisfiable formula F' in CNF with only a linear in
 
 </br>
 <img width="639" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/6af88fc7-179b-4acf-ab7f-1382b639cd2e">
+</br>
 
+### BCP
 
+### PLP
 
+```
+Consider the following formula (r ∨ ¬p ∨ ¬s) ∧ (¬q ∨ p ∨ r) ∧ (r ∨ q) ∧ ¬r. 
+We're trying to solve the formula using DPLL with BCP and PLP.  Assume the algorithm just picked the assignment r -> ⊥.
+Apply BCP and PLP on the resulting formula. That is, exhaustively apply unit-resolution and pure literal propagation.
+
+Remember, if you eliminate a variable p using unit resolution you may assume its assignment is ⊤.
+
+What is the remaining formula and final variable assignment after exhaustively applying BCP and PLP?
+```
+
+##### exercises
+
+```
+Consider the following formula F in propositional logic F≙ (¬( p ∧ ¬q )) → (( q → r ) → ( p → r )). Consider assignment I≙ {p→ ⊥, q→ ⊤, r→ ⊤}.  
+Which of the following statements is true?  
+
+Formula F is true under assignment I, that is I ⊨ F, and formula F is valid. 
+```
+
+```
+Consider the following propositional formula F ≙ p ∧ (q ∨ ¬r) ∧ (¬(¬q) ∨ r) ∧ r. Which of the following statements about F is true?  
+F is satisfiable and not in CNF. 
+```
 ## First order logic(predicate logic)
 Propositional logic has very limited expressive power  
 It is `undecidable` whether a first-order formula is valid
@@ -133,7 +168,9 @@ F ≙ p(x, a) → p(f(x), a)
 G ≙ ∃x.( p(x, x) → p(x, f(x)) )
 
 Let S = ⟨U, I⟩. Which of the following statements is true
-S, σ ⊨ F and S, σ ⊨ G, that is, both F and G are true.   
+S, σ ⊨ F and S, σ ⊨ G, that is, both F and G are true.
+
+
 ```
 
 
