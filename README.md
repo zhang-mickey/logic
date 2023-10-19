@@ -222,6 +222,9 @@ instead of the concrete post, we compute an abstract post post#
 
 </br>
 
+# Security
+side-channels& speculation
+
 ## non-Interference
 A process A is said to be noninterfering with another process B across a system M if A’s input to M has no effect on M’s output to B. This property implies that no information flows from A to B through M. Noninterference expresses a confidentiality guarantee because if the observations of B are completely independent of the actions of A, then M does not leak anything to B about A’s input and A cannot reveal any secrets to B via M. Noninterference also expresses an integrity guarantee because if no information flows from A to B through M, then B cannot be corrupted by A via M.
 </br>
@@ -236,17 +239,25 @@ A process A is said to be noninterfering with another process B across a system 
 </br>
 
 ## Information flow
+publicly observable information, and secret information  
+To ensure confidentiality, flowing information from high to low variables should not be allowed.  
+More generally, the security levels can be viewed as a lattice with information flowing only upwards in the lattice  
+For example, considering two security levels L and H (low and high), if L ≤ H,flows from L to L, from H to H, and L to H would be allowed, 
+while flows from H to L would not.  
 </br>
 <img width="355" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d2a3e67f-5bf8-48cc-a46b-39780a86baff">
 </br>
 <img width="337" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/1959c70e-3255-4d0d-b7f4-fa420ad82c52">
 
-##
+### Explicit flows and side channels
+<img width="697" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/04b3eb53-7b29-4405-ae73-ad463f63518a">
 
+### time attack
+In cryptography, a timing attack is a `side-channel attack` in which the attacker attempts to compromise a cryptosystem by analyzing the time taken to execute cryptographic algorithms. Every logical operation in a computer takes time to execute, and the time can differ based on the input; with precise measurements of the time for each operation, an attacker can work backwards to the input.
 
-
+## Security type system
+In a programming language augmented with a security type system every expression carries both a type (such as boolean, or integer) and a security label.
 ## Speculative Execution
 
 
-## time attack
-In cryptography, a timing attack is a `side-channel attack` in which the attacker attempts to compromise a cryptosystem by analyzing the time taken to execute cryptographic algorithms. Every logical operation in a computer takes time to execute, and the time can differ based on the input; with precise measurements of the time for each operation, an attacker can work backwards to the input.
+
