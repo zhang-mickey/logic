@@ -115,6 +115,7 @@ The quantifier-free fragment of T= is decidable but NP-complete
 </br>
 <img width="446" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/51bb8d40-b635-4a15-ac6c-e965ab73d139">
 </br>
+
 ```
 Consider universe U ≙ {▢,◍,★}, where we have a single unary function f, a unary predicate p, and a single constant a.
 Assume, we have variable assignment σ(x) = ★ and the following interpretation:
@@ -132,8 +133,9 @@ F ≙ p(x, a) → p(f(x), a)
 G ≙ ∃x.( p(x, x) → p(x, f(x)) )
 
 Let S = ⟨U, I⟩. Which of the following statements is true
-S, σ ⊨ F and S, σ ⊨ G, that is, both F and G are true. 
+S, σ ⊨ F and S, σ ⊨ G, that is, both F and G are true.   
 ```
+
 
 #### Peano Arithmetic
 <img width="480" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/9afcc271-c825-42f0-b034-002d775f5b0b">
