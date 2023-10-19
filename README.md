@@ -212,11 +212,41 @@ the solutions to the queries give us the missing loop invariants
 (4)
 ##### use abstraction to solve terminates
 instead of the concrete post, we compute an abstract post post#  
+</br>
+<img width="355" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2d32abd7-f9e8-4f81-8089-7367a68fd10b">
+
+</br>
+
+</br>
+<img width="349" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/e8e400be-736b-41a4-916e-8fa097a50a49">
+
+</br>
 
 ## non-Interference
 A process A is said to be noninterfering with another process B across a system M if A’s input to M has no effect on M’s output to B. This property implies that no information flows from A to B through M. Noninterference expresses a confidentiality guarantee because if the observations of B are completely independent of the actions of A, then M does not leak anything to B about A’s input and A cannot reveal any secrets to B via M. Noninterference also expresses an integrity guarantee because if no information flows from A to B through M, then B cannot be corrupted by A via M.
+</br>
+<img width="364" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/247c7aa5-0940-4261-8fc2-52dd6cf7ab4c">
 
+</br>
+
+## attacker model
+</br>
+<img width="348" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/44a9974d-4324-43b6-9387-e6319904fc37">
+
+</br>
 
 ## Information flow
+</br>
+<img width="355" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d2a3e67f-5bf8-48cc-a46b-39780a86baff">
+</br>
+<img width="337" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/1959c70e-3255-4d0d-b7f4-fa420ad82c52">
 
 ##
+
+
+
+## Speculative Execution
+
+
+## time attack
+In cryptography, a timing attack is a `side-channel attack` in which the attacker attempts to compromise a cryptosystem by analyzing the time taken to execute cryptographic algorithms. Every logical operation in a computer takes time to execute, and the time can differ based on the input; with precise measurements of the time for each operation, an attacker can work backwards to the input.
