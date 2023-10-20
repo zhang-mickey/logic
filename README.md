@@ -229,7 +229,8 @@ a state <img width="9" alt="image" src="https://github.com/zhang-mickey/logic/as
 
 
 
-### WP
+### WP Postcondition Weakening
+we need to use an SMT solver when applying post-conditioon weakening  
 <img width="433" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2f7c6388-8271-4d22-8d7b-c64c6dad4f09">
 </br>
 
