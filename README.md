@@ -275,6 +275,7 @@ wp(s,Q) denotes the weakest formula that needs to hold before s, to ensure that 
 
 </br>
 we need to use an SMT solver when applying post-conditioon weakening  
+</br>
 <img width="433" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2f7c6388-8271-4d22-8d7b-c64c6dad4f09">
 </br>
 
@@ -415,4 +416,5 @@ In a programming language augmented with a security type system every expression
 https://github.com/barghouthi/cs704  
 https://theory.stanford.edu/~arbrad/slides/  
 Hoare logic:  
-https://www.cl.cam.ac.uk/teaching/2021/HLog+ModC/slides/
+https://www.cl.cam.ac.uk/teaching/2021/HLog+ModC/slides/  
+https://cmu-program-analysis.github.io/2023/index.html
