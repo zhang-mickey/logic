@@ -268,7 +268,8 @@ a state <img width="9" alt="image" src="https://github.com/zhang-mickey/logic/as
 
 
 
-### WP Postcondition Weakening
+### WP Postcondition strengthening
+wp(s,Q) denotes the weakest formula that needs to hold before s, to ensure that Q holds after s.  
 </br>
 <img width="437" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/faea73af-4428-42bc-8ad7-77bde2690860">
 
@@ -300,6 +301,8 @@ holds after each loop iteration
 </br>
 
 ### Vcgen(verification condition generation)
+The weakest precondition of a loop is its invariant, but we still need to check that the invariant is inductive.  
+This requires side-conditions, which we generate via function vc.  
 the general steps:  
 <img width="581" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/19477022-e6ad-4a64-9d55-cdaff1b018b1">
 
