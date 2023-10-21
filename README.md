@@ -4,7 +4,10 @@
 </br>
 Sound：程序分析覆盖了所有的内容  
 complete: 不会误报，但可能漏报
+</br>
+<img width="499" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/b73e4968-754b-4272-9748-023dda7e29d1">
 
+</br>
 - [propositional logic]
 - [First order logic]
 
@@ -183,7 +186,7 @@ Validity in full Peano and even the quantifier0free fragment of Peano Arithmetic
 
 #### Presburger arithmetic
 drop multiplication  
-Balidity in quantifier-free and full Presburger arithmetic is decidable, but super exponential complexity.
+validity in quantifier-free and full Presburger arithmetic is decidable, but super exponential complexity.
 </br>
 <img width="470" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/3b05b898-31d7-493f-9197-fefbd22b97ad">
 #### Integer Arithmetic (linear arithmetic over integers)
@@ -215,12 +218,48 @@ Conjunctive quantifier-free fragment efficiently decidable (polynomial time)
 
 
 ## Hoare logic
+Hoare logic is a formalism for relating the initial and terminal state of a program.  
+</br>
+<img width="469" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/16d895d6-ce18-4460-acbe-0f94d56fcd39">
+
+</br>
+Hoare logic is a way of inserting annotations into code to make
+proofs about (imperative) program behavior simpler.
+</br>
+<img width="523" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/dcc1b93e-d55c-41f2-9888-a449e07e76c2">
+
+</br>
+
 </br>
 <img width="634" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2cc638f2-7b2e-46bc-9c86-f15c95f2e831">
 </br>
 </br>
 <img width="362" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/53d037ee-3426-4cf3-9167-15cb67752545">
 </br>
+
+### partial correctness
+<img width="532" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/bd18304e-ede3-491e-b35e-aec37d118277">
+</br>
+
+#### corner cases
+<img width="531" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/02099b81-53d9-41bd-8924-22339045a42e">
+
+### proof roles
+<img width="525" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/c1d0a20d-80f3-4bfa-a87e-f5dbb45e3c74">
+</br>
+<img width="510" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/7eb8437e-9ecd-4130-8e2a-795029def187">
+
+</br>
+<img width="515" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/0943a748-f92d-493f-8cf8-f3ea94d468a6">
+</br>
+<img width="508" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d220396f-434f-4a58-a0cc-98f9eaf10e7a">
+
+</br>
+<img width="502" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/54063e99-8f7b-427b-93e2-c6f353a0bc48">
+
+</br>
+<>
+####
 
 ### Semantics
 a state <img width="9" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/10d5e8e0-b9f0-4c55-a3b6-38522360068b"> is a function from vars to Z；
@@ -230,6 +269,10 @@ a state <img width="9" alt="image" src="https://github.com/zhang-mickey/logic/as
 
 
 ### WP Postcondition Weakening
+</br>
+<img width="437" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/faea73af-4428-42bc-8ad7-77bde2690860">
+
+</br>
 we need to use an SMT solver when applying post-conditioon weakening  
 <img width="433" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2f7c6388-8271-4d22-8d7b-c64c6dad4f09">
 </br>
