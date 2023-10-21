@@ -295,11 +295,7 @@ holds after each loop iteration
 
 
 
-### pointer
 
-</br>
-<img width="398" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/eda598f6-0451-4471-bbc3-1470480e5f67">
-</br>
 
 ### Vcgen(verification condition generation)
 The weakest precondition of a loop is its invariant, but we still need to check that the invariant is inductive.  
@@ -315,6 +311,15 @@ the general steps:
 </br>
 <img width="546" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/ec076f98-3336-4e85-9b36-9e9733216cde">
 </br>
+
+### Functions
+precondition and postcondition are called `function contact`.
+### pointer
+
+</br>
+<img width="398" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/eda598f6-0451-4471-bbc3-1470480e5f67">
+</br>
+
 
 #### Soundness of Hoare logic
 <img width="577" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/33a6e7bc-611a-47f5-945e-f7133fc61d7a">
