@@ -299,13 +299,24 @@ holds after each loop iteration
 <img width="398" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/eda598f6-0451-4471-bbc3-1470480e5f67">
 </br>
 
-### Vcgen
+### Vcgen(verification condition generation)
+the general steps:  
+<img width="581" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/19477022-e6ad-4a64-9d55-cdaff1b018b1">
+
+
 </br>
 <img width="405" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/19c79538-fb45-474f-b39e-d5f091ca85af">
 </br>
 <img width="526" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/6d578847-2ff4-4e05-99ca-2404c9542792">
 </br>
 <img width="546" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/ec076f98-3336-4e85-9b36-9e9733216cde">
+</br>
+
+#### Soundness of Hoare logic
+<img width="577" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/33a6e7bc-611a-47f5-945e-f7133fc61d7a">
+
+#### completeness
+<img width="589" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/9f6b1b7e-079b-4bcb-b279-d2c2754ef05b">
 
 #### Hoare logic exercises
 <img width="557" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/56e907dd-a43f-431d-b48e-c4e081149755">
@@ -399,4 +410,6 @@ In a programming language augmented with a security type system every expression
 # literature
 程序分析与验证中的近似思想  
 https://github.com/barghouthi/cs704  
-https://theory.stanford.edu/~arbrad/slides/
+https://theory.stanford.edu/~arbrad/slides/  
+Hoare logic:  
+https://www.cl.cam.ac.uk/teaching/2021/HLog+ModC/slides/
