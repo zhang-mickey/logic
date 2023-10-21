@@ -14,8 +14,8 @@ complete: 不会误报，但可能漏报
 ## propositional logic 
 formula = conjunction ∧ of clauses
 clause = disjunction ∨ of literals
-literal = proposition or its negation
-
+literal = proposition or its negation  
+F is `contingent` iff it si satisfiable but not valid  
 ### NNF
 Negation only appears in literals
 ### DNF
@@ -184,7 +184,7 @@ Validity in full Peano and even the quantifier0free fragment of Peano Arithmetic
 </br>
 <img width="477" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/e5231f83-0a51-4489-b08d-6b372cd5790d">
 
-#### Presburger arithmetic
+#### Presburger arithmetic(could prove that 2 × x = x + x)
 drop multiplication  
 validity in quantifier-free and full Presburger arithmetic is decidable, but super exponential complexity.
 </br>
@@ -202,7 +202,7 @@ Conjunctive quantifier-free fragment efficiently decidable (polynomial time)
 </br>
 <img width="471" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d622fb99-ae71-4acd-acb6-ed2466b5fad2">
 
-#### Theory of arrays
+#### Theory of arrays（ could prove that assigning x[y] to 3 and then looking up x[y] yields 3）
 <img width="501" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d5f43a6f-bbe5-4755-a04a-2c84eaba9885">
 </br>
 = is only defined for array elements  
@@ -259,7 +259,12 @@ proofs about (imperative) program behavior simpler.
 
 </br>
 <>
+  
 ####
+<img width="512" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/9578dcf5-ce3d-4ada-a12f-8cce06727225">
+it shows that   how to pose the search for a Hoare-logic annotation as a search for a relation r(x,y,z) over program variables.  
+We can generate a set of constraints whose models give solutions of r.
+
 
 ### Semantics
 a state <img width="9" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/10d5e8e0-b9f0-4c55-a3b6-38522360068b"> is a function from vars to Z；
@@ -315,11 +320,15 @@ the general steps:
 ### Functions
 precondition and postcondition are called `function contact`.
 ### pointer
-
+why we need to enhance rule of substitution
+</br>
+<img width="627" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/52dcc232-0e52-4a2a-835f-3924e772d67c">
+</br>
+Due to aliasing, an assignment ⭐x:=e can affect values of expressions beyongd ⭐x.  
 </br>
 <img width="398" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/eda598f6-0451-4471-bbc3-1470480e5f67">
-</br>
-
+</br>  
+https://github.com/barghouthi/cs704/blob/master/notes/cs704-lec-04-19-2010.pdf
 
 #### Soundness of Hoare logic
 <img width="577" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/33a6e7bc-611a-47f5-945e-f7133fc61d7a">
@@ -344,7 +353,10 @@ motivation:
 </br>
 <img width="358" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/32a3cf90-1a7a-4816-abbb-e09a46649b41">
 </br>
+</br>
+<img width="454" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/5f0d9b92-67b6-4be6-b108-b7b029986806">
 
+</br>
 #### Non-recursive clause are easy to solve
 #### Solving recursive clauses is undecidable& amounts to finding loop invariants.
 
@@ -418,6 +430,7 @@ In a programming language augmented with a security type system every expression
 
 # literature
 程序分析与验证中的近似思想  
+
 https://github.com/barghouthi/cs704  
 https://theory.stanford.edu/~arbrad/slides/  
 Hoare logic:  
