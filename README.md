@@ -55,6 +55,10 @@ Remember, if you eliminate a variable p using unit resolution you may assume its
 
 What is the remaining formula and final variable assignment after exhaustively applying BCP and PLP?
 ```
+### DPLL(T)
+This use of DPLL parameterized with respect to a set of theories T is called DPLL(T).  
+(1)DPLL(T) does not use the pure variable elimination.  This is because, with theories, variables may be dependent.  
+
 
 ##### exercises
 
