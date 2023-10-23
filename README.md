@@ -480,6 +480,16 @@ the solutions to the queries give us the missing loop invariants
 (2)Pick any clause whose head is q query  
 (3)then use the post operator to compute strongest postconditions  
 (4)
+```
+Horn Clause Solving:
+
+Say we are given a set of Horn clauses C, such that the head of all clauses is a query. Let's add another clause b, whose head is ⊥. Let's further assume, we are given a set of predicates P, and we're computing a solution by applying our solving algorithm to the set C ∪ b which produces a solution Σ. Which of the following statements is true?
+
+  If Σ ⊭ b, then there is no Σ' such that Σ' ⊨ b. 
+  It is always true that Σ ⊨ b, that is, that the solution satisfies b. 
+
+  If Σ ⊭ b, then there might or might not be a solution Σ' to C ∪ b such that Σ' ⊨ b. Correct!
+```
 ##### subsumption check
 <img width="355" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/0d71c027-adf9-420f-8f2b-3bb3f182227d">
 </br>
@@ -489,6 +499,21 @@ the solutions to the queries give us the missing loop invariants
 为了保证分析的正确性（Soundness），下近似分析一般只用于找错（证伪，Falsification），但无法用于证明（Verification）。这是因为，在实际状态集C的子集U中寻找到的可达错误状态，一定也是C中的可达错误状态。反之，U中不存在可达错误状态却不能说明C中亦不存在可达错误状态。软件测试可以视为一种下近似分析；
 上近似分析则一般只用于证明，而不直接用于找错。这是因为在实际状态集C的超集O中不存在可达的错误状态，那么C中一定也不存在可达错误状态。反之，O中存在可达的错误状态，却不能说明C中亦存在可达的错误状态。一般基于抽象的方法，比如静态分析中的各类基于抽象解释的分析算法，程序验证中的谓词抽象、路径抽象等等，都是上近似分析；引入不变式也是一种上近似。  
 instead of the concrete post, we compute an abstract post post#  
+```
+Abstract Post:
+
+Consider the following formula φ ≙ (∀x.∀y. (x>0 ∧ f(x)=y) → y>x)) ∧ z≥4 .
+
+We want to compute the abstract postcondition post#(φ, z) with respect to predicates P ≙ {z≥0, z≤0, z≥5, f(z)≥5}.
+
+Which of the following statements is true?
+
+  The abstract post condition is f(z)≥5. 
+  The abstract post condition is z≥0. 
+  The abstract post condition is z≤0. 
+ 
+  The abstract post condition is z≥0 ∧ f(z)≥5.  Correct!
+```
 </br>
 <img width="355" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/2d32abd7-f9e8-4f81-8089-7367a68fd10b">
 
@@ -515,6 +540,17 @@ A process A is said to be noninterfering with another process B across a system 
 
 </br>
 
+```
+Non-interference:
+
+Consider the following program s, where only obs can be observed by an attacker.  
+
+x := secret;
+if (x>=0){ obs:= 2;}
+obs:=0;
+The program satisfies non-interference, but there exists no Γ, such that Γ(obs)=obs, Γ(secret)=sec and Γ, obs ⊢ s, i.e., there is no Γ such that s type-checks, using our IFC type system.
+```
+
 ## attacker model
 </br>
 <img width="348" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/44a9974d-4324-43b6-9387-e6319904fc37">
@@ -530,7 +566,36 @@ while flows from H to L would not.
 </br>
 <img width="355" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d2a3e67f-5bf8-48cc-a46b-39780a86baff">
 </br>
-<img width="337" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/1959c70e-3255-4d0d-b7f4-fa420ad82c52">
+<img width="337" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/1959c70e-3255-4d0d-b7f4-fa420ad82c52">  
+```
+Information Flow Control:
+
+You're a newly hired security engineer. The company you work in consists of four employees, alice, bob, greg, and dave, whose relationship is characterized by a lattice, where the following relations hold:
+
+bob ⊑ alice
+dave ⊑ alice
+greg ⊑ bob
+greg ⊑ dave
+
+In particular, it's not the case that bob ⊑ dave or dave ⊑ bob.
+
+Your task is to check the local software for leaks. Let's assume you're given the typing environment
+
+Γ(x)= alice, Γ(y)=bob, Γ(z)=dave, and Γ(q)=greg, and the following three programs:
+
+(1) x := y+z
+
+(2) z := y+1
+
+(3) q := y+z
+
+We're interested in whether these programs type check with pc label greg. Which of the following statements is true?
+
+ 
+
+Correct!
+  Program (1), type checks, but not programs (2) and (3). 
+```
 
 ### Explicit flows and side channels
 <img width="697" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/04b3eb53-7b29-4405-ae73-ad463f63518a">
