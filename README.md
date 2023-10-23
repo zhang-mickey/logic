@@ -217,7 +217,25 @@ Conjunctive quantifier-free fragment efficiently decidable (polynomial time)
 
 </br>
 
+```
+Say, we extend Nano with a new expression ✴, that is described via the following inference rule, where ℤ denotes the integers. 
 
+              n ∈ ℤ
+--------------------------
+
+         ⟨ ✴, σ⟩⇓ n
+
+Say we're given the following program s:
+
+x := ✴; y:=y+1
+
+Let σ be an initial state such that σ(x)=0, and let ⇓ be the evaluation relation for expressions, including the new rule.
+
+Which of the following statements is true?
+
+Correct answer
+ ⇓ is not a function and there exists σ’ such that ⟨ s, σ ⟩⇓ σ’ and σ’(x)=σ’(y).
+```
 
 
 
@@ -240,7 +258,22 @@ proofs about (imperative) program behavior simpler.
 </br>
 <img width="362" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/53d037ee-3426-4cf3-9167-15cb67752545">
 </br>
+'''
+Hoare Logic
 
+Consider the following program L, which first executes a loop, and then a second statement s.
+
+while i>0 do {i:=i+1}; s
+
+Say, we are interested in whether the Hoare triple {⊤} L {Q} is valid, i.e., if  ⊨ {⊤} L {Q} holds.
+
+For which of the following choices of s and Q is the Hoare triple valid.
+
+  Q=⊤ and s= assert(⊥) 
+  Q=⊥ and s= assert(⊤) 
+Correct answer
+  Q=⊥ and s= assume(i>0) 
+'''
 ### partial correctness
 <img width="532" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/bd18304e-ede3-491e-b35e-aec37d118277">
 </br>
@@ -292,6 +325,33 @@ we need to use an SMT solver when applying post-conditioon weakening
 Loop invariants:
 holds before the loop
 holds after each loop iteration
+```
+Hoare Logic and Invariants
+
+We want to verify that a loop L has postcondition Q when executed under pre-condition P, that is, we want to prove the Hoare triple {P} L {Q}.
+
+Let L ≙ while b do s. We want find an invariant I and use the Hoare rule for while loops, i.e., the rule that says, to prove ⊢{I} while b do s {I ∧¬b}, we need to prove ⊢{I ∧ b} s {I}, together with pre-condition strengthening and post-condition weakening. Which of the following statements about I is not true.
+
+  I needs to be an invariant. 
+  I needs to be inductive. 
+  I needs to imply Q.  Correct!
+```
+
+```
+Consider the following program:
+
+assume(n≥0);i=0;j=n; while i < n  do {i := i + 1; j := j - 1}
+
+We want to use the Hoare logic While rule to prove that j≤0 holds after the program.
+
+Say, your friend suggests the following candidate for invariant I= (n≥i+j), i.e., the invariant states that 
+n is larger or equal to i plus j.
+
+Which of the following statements is true.
+
+Correct answer
+  The proof works out; I is an an inductive invariant that implies the post-condition.
+```
 </br>
 <img width="473" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/5663acd1-028f-4b43-b529-6c81909c40fd">
 
@@ -329,9 +389,23 @@ why we need to enhance rule of substitution
 <img width="627" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/52dcc232-0e52-4a2a-835f-3924e772d67c">
 </br>
 Due to aliasing, an assignment ⭐x:=e can affect values of expressions beyongd ⭐x.  
+```
+Weakest Preconditions & Pointers
+
+Consider the following Hoare triple we want to prove about a program containing pointers {⊤} *q := 4; *p := q; x := *p {x≥0}.
+
+Let's use Pre to denote the weakest precondition of *q := 4; *p := q; x := *p with respect to x≥0 and let μ to denote the memory. Which of the following statements is true? 
+
+
+  The Hoare triple does not hold, and Pre = μ<q◁4><p◁q>[p]≥0. Correct!
+```
 </br>
 <img width="398" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/eda598f6-0451-4471-bbc3-1470480e5f67">
 </br>  
+
+</br>
+
+</br>
 https://github.com/barghouthi/cs704/blob/master/notes/cs704-lec-04-19-2010.pdf
 
 #### Soundness of Hoare logic
@@ -348,6 +422,29 @@ https://github.com/barghouthi/cs704/blob/master/notes/cs704-lec-04-19-2010.pdf
 Horn clauses represent constraints on unknown relations called queries.  
 use weakest preconditions to translate programs into Horn clauses, this translation uses queries to represnet loop invariants.  
 Free variables are implicitly universally quantified.  
+```
+Horn Clauses
+
+Consider the following set of Horn clauses ℂ.
+
+(1)   y=x → p(x,y) 
+
+(2)   p(x,y) → q(x,y) 
+
+(3)   q(x,y) ∧ y'=y+2 ∧ x'=x-1  → p(x',y') 
+
+(4)   q(x,y) → y>x
+
+Your friend proposes the following solution: Σ ≙ {p(x,y)→(x=y), q(x,y)→(y≥x+1)}, that is, the solution maps p to x=y and q to y≥=x+1.
+
+Which of the following statements is true?
+
+  Σ is not a solution, i.e., Σ ⊭ ℂ, and ℂ is not recursive. 
+  Σ is a solution, i.e., Σ ⊨ ℂ, and ℂ is recursive. 
+  Σ is a solution, i.e., Σ ⊨ ℂ, and ℂ is not recursive. 
+
+  Σ is not a solution, i.e., Σ ⊭ ℂ, and ℂ is recursive. Correct!
+```
 #### why horn clause
 motivation:
 <img width="195" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/35b8018b-3bdb-4036-bc8a-3cffd0a421f6">
