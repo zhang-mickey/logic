@@ -591,10 +591,8 @@ Your task is to check the local software for leaks. Let's assume you're given th
 
 We're interested in whether these programs type check with pc label greg. Which of the following statements is true?
 
- 
 
-Correct!
-  Program (1), type checks, but not programs (2) and (3). 
+  Program (1), type checks, but not programs (2) and (3).  Correct!
 ```
 
 ### Explicit flows and side channels
@@ -603,8 +601,17 @@ Correct!
 ### time attack
 In cryptography, a timing attack is a `side-channel attack` in which the attacker attempts to compromise a cryptosystem by analyzing the time taken to execute cryptographic algorithms. Every logical operation in a computer takes time to execute, and the time can differ based on the input; with precise measurements of the time for each operation, an attacker can work backwards to the input.
 
-## Security type system
+## Security type system(language-based security)
+An alternative approach for non-interference  
+For statement s, if s is well-typed, then s should be non-interferent.  
 In a programming language augmented with a security type system every expression carries both a type (such as boolean, or integer) and a security label.
+### type statement
+Skip is always well-typed.  
+
+### Program counter label
+pc tracks the security label of the program counter  
+if we are in an if-statement or loop that depends on a sec variable, the pc label is sec.  
+If we assign to a variable, we need to check it is at least as confidential as the program counter.  
 ## Speculative Execution
 
 # literature
