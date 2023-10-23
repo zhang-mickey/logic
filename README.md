@@ -346,7 +346,8 @@ https://github.com/barghouthi/cs704/blob/master/notes/cs704-lec-04-19-2010.pdf
 
 ### Horn clause
 Horn clauses represent constraints on unknown relations called queries.  
-use weakest preconditions to translate programs into Horn clauses, this translation uses queries to represnet loop invariants.
+use weakest preconditions to translate programs into Horn clauses, this translation uses queries to represnet loop invariants.  
+Free variables are implicitly universally quantified.  
 #### why horn clause
 motivation:
 <img width="195" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/35b8018b-3bdb-4036-bc8a-3cffd0a421f6">
@@ -361,11 +362,21 @@ motivation:
 <img width="454" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/5f0d9b92-67b6-4be6-b108-b7b029986806">
 
 </br>
+
+#### From programs to Horn Clauses
+For an if-statement, introduce a fresh query.  
+While loopsare no longer annotated with invariants. 
+
 #### Non-recursive clause are easy to solve
+<img width="644" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/3a353096-2a94-4849-903e-f073ad73d7af">
+
 #### Solving recursive clauses is undecidable& amounts to finding loop invariants.
 
 #### Normalizeing Horn Clauses
-#### solving Horn clauses
+q(x,y) → p(x+1,y) {X}  
+q(x) → x<n {X}  
+
+#### (Naive) solving Horn clauses
 we can use *post* to compute a solution for a set of Horn clauses  
 the solutions to the queries give us the missing loop invariants  
 (1)start with a solution that maps all queries to false  
@@ -375,7 +386,8 @@ the solutions to the queries give us the missing loop invariants
 ##### subsumption check
 <img width="355" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/0d71c027-adf9-420f-8f2b-3bb3f182227d">
 </br>
-##### use abstraction to solve terminates
+
+##### use abstraction to solve terminates(always terminates)
 我们将程序在执行过程中，所有可能出现的状态视为一个集合，称为程序的实际状态集合，记为C。一般而言，集合C是难以获得和准确描述的，而直接在C上进行分析是困难的，其代价也非常高。因此，我们需要使用近似思想，在一个更加“简洁”的集合上进行分析，从而提高效率。在下近似分析中，会在一个C的子集U中进行分析；而在上近似分析中，则会在一个C的超集O中进行分析。  
 为了保证分析的正确性（Soundness），下近似分析一般只用于找错（证伪，Falsification），但无法用于证明（Verification）。这是因为，在实际状态集C的子集U中寻找到的可达错误状态，一定也是C中的可达错误状态。反之，U中不存在可达错误状态却不能说明C中亦不存在可达错误状态。软件测试可以视为一种下近似分析；
 上近似分析则一般只用于证明，而不直接用于找错。这是因为在实际状态集C的超集O中不存在可达的错误状态，那么C中一定也不存在可达错误状态。反之，O中存在可达的错误状态，却不能说明C中亦存在可达的错误状态。一般基于抽象的方法，比如静态分析中的各类基于抽象解释的分析算法，程序验证中的谓词抽象、路径抽象等等，都是上近似分析；引入不变式也是一种上近似。  
@@ -393,6 +405,7 @@ instead of the concrete post, we compute an abstract post post#
 
 
 ##### fixedpoint theorem Kleene
+
 ##### abstract interpretation
 
 # Security
