@@ -31,6 +31,8 @@ A clause that only consists of a single propositional variable and its negation 
 Remove such clauses from your solution. How many clauses does the translation have?
 3 
 ```
+Naive ways of checking SAT: Truth table and Deductive proofs  
+Checking SAT efficiently via normal forms & DPLL.  
 ### Tseitin's transformation
 converts formula F to an equisatisfiable formula F' in CNF with only a linear increase in size.
 </br>
@@ -147,10 +149,13 @@ consider a ground formula F such that S,σ|=F, is S a model of F?{YES}
 ### first-order theories
 But undecidable makes decision procedures unpredictable  
 we donot know if they will terminate  
-Foucu on decidable fragments of FOL
+Foucu on decidable fragments of FOL  
 That means, for some first order theory T:if a formula is valid in FOL, it is also valid modulo T  
 but if a formula is valid modulo T,is it also valid in FOL {No}  
+
+Theories we need for reasoning about programs: Equality, Arithmetic, Data-structures: Arrays.  
 #### T =
+Only = is "interpreted"  
 <img width="452" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/1e4c0455-fc47-4d5e-8699-b8be8cb52d88">
 </br>
 The quantifier-free fragment of T= is decidable but NP-complete
@@ -184,7 +189,7 @@ S, σ ⊨ F and S, σ ⊨ G, that is, both F and G are true.
 #### Peano Arithmetic
 <img width="480" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/9afcc271-c825-42f0-b034-002d775f5b0b">
 </br>
-Validity in full Peano and even the quantifier0free fragment of Peano Arithmetic is undecidable
+Validity in full Peano and even the quantifier-free fragment of Peano Arithmetic is undecidable
 </br>
 <img width="477" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/e5231f83-0a51-4489-b08d-6b372cd5790d">
 
@@ -193,7 +198,7 @@ drop multiplication
 validity in quantifier-free and full Presburger arithmetic is decidable, but super exponential complexity.
 </br>
 <img width="470" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/3b05b898-31d7-493f-9197-fefbd22b97ad">
-#### Integer Arithmetic (linear arithmetic over integers)
+#### Integer Arithmetic (linear arithmetic over integers)(LIA)
 equivalent in expressiveness to Presburger arithmetic
 
 #### Theory of Rationals
@@ -207,6 +212,7 @@ Conjunctive quantifier-free fragment efficiently decidable (polynomial time)
 <img width="471" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d622fb99-ae71-4acd-acb6-ed2466b5fad2">
 
 #### Theory of arrays（ could prove that assigning x[y] to 3 and then looking up x[y] yields 3）
+The quantifier-free fragment of TA is decidable.  
 <img width="501" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/d5f43a6f-bbe5-4755-a04a-2c84eaba9885">
 </br>
 = is only defined for array elements  
@@ -236,10 +242,15 @@ Which of the following statements is true?
 Correct answer
  ⇓ is not a function and there exists σ’ such that ⟨ s, σ ⟩⇓ σ’ and σ’(x)=σ’(y).
 ```
+#### combinations of theories
+if
+the quantifier-free fragment of T1 is decidable  
+the quantifier-free fragment of T2 is decidable  
+T1 and T2 meet certain technical requirements  
+then the quantifier-free fragment of T1 and T2 is also decidable.  
 
 
-
-## Hoare logic
+## Hoare logic(endoce proofs abount programs)(Axiomatic semantics)
 Hoare logic is a formalism for relating the initial and terminal state of a program.  
 </br>
 <img width="469" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/16d895d6-ce18-4460-acbe-0f94d56fcd39">
@@ -274,6 +285,11 @@ For which of the following choices of s and Q is the Hoare triple valid.
 Correct answer
   Q=⊥ and s= assume(i>0) 
 '''
+### operational semantics
+A state is a function from vars to Z, captures the current value of all variables.  
+Expressions evaluate to a number or Boolean value  
+statements have no direct result, they yield a new program state.  
+
 ### partial correctness
 <img width="532" alt="image" src="https://github.com/zhang-mickey/logic/assets/145342600/bd18304e-ede3-491e-b35e-aec37d118277">
 </br>
@@ -616,6 +632,8 @@ If we assign to a variable, we need to check it is at least as confidential as t
 
 # literature
 程序分析与验证中的近似思想  
+
+The formal semantics of programming languages  
 
 https://github.com/barghouthi/cs704  
 https://theory.stanford.edu/~arbrad/slides/  
