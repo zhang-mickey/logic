@@ -16,6 +16,7 @@ formula = conjunction ∧ of clauses
 clause = disjunction ∨ of literals
 literal = proposition or its negation  
 F is `contingent` iff it si satisfiable but not valid  
+in the expression A∧B∨C, the AND operation (∧∧) will be evaluated before the OR operation (∨)  
 ### NNF
 Negation only appears in literals
 ### DNF
